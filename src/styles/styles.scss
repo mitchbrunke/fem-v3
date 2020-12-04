@@ -1,4 +1,6 @@
 @import "_resets";
+@import "_home";
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,500&display=swap");
 
 $html-font-size: 16px;
 @function stripUnit($value) {
@@ -6,4 +8,25 @@ $html-font-size: 16px;
 }
 @function rem($pxValue) {
   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+//Primary Colours
+
+$peach: #e7816b;
+$black: #1d1c1e;
+$white: #ffffff;
+
+//Secondary Colours
+
+$light-peach: #ffad9b;
+$dark-grey: #333136;
+$light-grey: #f1f3f5;
+
+body {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: rem(16);
+  line-height: 162%;
+  color: $dark-grey;
 }
