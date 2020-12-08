@@ -1,7 +1,10 @@
 .hero {
   width: 100%;
-  text-align: center;
-  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh;
   overflow: hidden;
   background: #e7816b;
   position: relative;
@@ -40,7 +43,10 @@
   }
 
   .hero-phone {
-    // margin-top: rem(-50);
+    img {
+      width: 279px;
+      height: 573px;
+    }
   }
 }
 

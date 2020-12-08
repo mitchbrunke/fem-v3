@@ -1,13 +1,18 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Designo</title>
     <link
       rel="shortcut icon"
       href="./assets/favicon-32x32.png"
       type="image/x-icon"
     />
-    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   </head>
   <body>
     <section class="nav">
@@ -18,7 +23,7 @@
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </div>
     </section>
-
+    <!---------------- Hero ---------------------->
     <section class="hero">
       <div id="circle">
         <img src="./assets/home/desktop/bg-pattern-hero-home.svg" alt="" />
@@ -28,30 +33,43 @@
         <p>
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, app design, and engaging brand experiences.
-          Find out more about our services.
         </p>
       </div>
-      <div class="hero-bottom">
-        <a href="#"><button class="white-btn">Learn More</button></a>
-        <div class="hero-phone">
-          <img
-            src="./assets/home/desktop/image-hero-phone.png"
-            alt="mobile responsive website"
-            srcset=""
-          />
-        </div>
+      <a href="#"><button class="white-btn">Learn More</button></a>
+      <div class="hero-phone">
+        <img
+          src="./assets/home/mobile/phone.png"
+          alt="mobile responsive website"
+        />
       </div>
     </section>
+    <!---------------- Services ---------------------->
     <section class="services">
       <div class="cards">
         <div class="card" id="web">
           <h2>web design</h2>
           <p>VIEW PROJECTS</p>
         </div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card" id="SEO">
+          <h2>SEO</h2>
+          <p>VIEW PROJECTS</p>
+        </div>
+        <div class="card">
+          <h2>PPC</h2>
+          <p>VIEW PROJECTS</p>
+        </div>
       </div>
     </section>
+    <!---------------- Quote ---------------------->
+    <div class="glider">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <!---------------- Contact ---------------------->
     <script src="index.js"></script>
   </body>
 </html>
