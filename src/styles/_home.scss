@@ -1,0 +1,51 @@
+.hero {
+  width: 100%;
+  text-align: center;
+  max-height: 95vh;
+  overflow: hidden;
+  background: #e7816b;
+  position: relative;
+  z-index: 1;
+
+  .hero-text {
+    position: relative;
+    padding: 80px 24px 0 24px;
+    color: white;
+    width: 100%;
+    z-index: 100;
+
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: rem(32);
+      line-height: 112%;
+      text-align: center;
+      z-index: 100;
+    }
+
+    p {
+      padding: rem(14) rem(24);
+      font-size: rem(15);
+      line-height: rem(25);
+      text-align: center;
+    }
+  }
+
+  #circle {
+    position: absolute;
+    top: rem(102);
+    right: -50%;
+    z-index: 10;
+    opacity: 0.61;
+  }
+
+  .hero-phone {
+    // margin-top: rem(-50);
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background: green;
+  }
+}

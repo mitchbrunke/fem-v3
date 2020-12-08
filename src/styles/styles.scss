@@ -1,5 +1,4 @@
 @import "_resets";
-@import "_home";
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,500&display=swap");
 
 $html-font-size: 16px;
@@ -30,3 +29,41 @@ body {
   line-height: 162%;
   color: $dark-grey;
 }
+
+.nav {
+  display: flex;
+  height: rem(96);
+  background: #ffffff;
+
+  .burger {
+    padding-top: rem(39);
+    padding-right: rem(24);
+
+    img {
+      width: rem(30);
+    }
+  }
+}
+
+.white-btn {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(15);
+  line-height: rem(22);
+  /* identical to box height */
+  letter-spacing: rem(1);
+  text-transform: uppercase;
+  color: #333136;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: rem(18) rem(25);
+
+  &:hover {
+    color: white;
+    background: #ffad9b;
+  }
+}
+
+@import "_home";
