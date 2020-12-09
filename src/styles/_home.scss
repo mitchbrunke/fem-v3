@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 90vh;
+  min-height: 90vh;
   overflow: hidden;
   background: #e7816b;
   position: relative;
-  z-index: 1;
+  z-index: -1;
 
   .hero-text {
     position: relative;
@@ -43,9 +43,14 @@
   }
 
   .hero-phone {
+    position: relative;
+    height: 35vh;
+    width: 100vw;
+
     img {
-      width: 279px;
-      height: 573px;
+      width: 100%;
+      height: auto;
+      margin-top: rem(-55);
     }
   }
 }

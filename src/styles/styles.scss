@@ -45,6 +45,35 @@ body {
   }
 }
 
+.mob-contain {
+  display: none;
+  position: absolute;
+  right: 100vw;
+  top: rem(95);
+  z-index: 1;
+  width: 101vw;
+
+  .mob-nav {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    padding: rem(48) rem(24);
+    background: #1d1c1e;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: rem(24);
+    line-height: 104%;
+    letter-spacing: rem(2);
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+    transform: translateX(100%);
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+
+    li:nth-child(2) {
+      padding: rem(32) 0;
+    }
+  }
+}
 .white-btn {
   cursor: pointer;
   font-style: normal;
@@ -64,6 +93,65 @@ body {
     color: white;
     background: #ffad9b;
   }
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 2.5em;
+  right: 0;
+  transform: translateX(-100%);
+  background: white;
+  padding: 1em 0.5em;
+  border: none;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 2em;
+  height: 3px;
+  background: $dark-grey;
+  transition: transform 350ms ease-in-out, opacity 200ms linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 00;
+}
+
+.hamburger::before {
+  bottom: 6px;
+}
+.hamburger::after {
+  top: 6px;
+}
+
+/* Navigation open styles */
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+/* Change this stuff below */
+
+.nav-open .hamburger {
+  transform: rotate(45deg);
+}
+
+.nav-open .hamburger::before {
+  opacity: 0;
+}
+
+.nav-open .hamburger::after {
+  transform: rotate(90deg) translate(-6px);
 }
 
 @import "_home";
